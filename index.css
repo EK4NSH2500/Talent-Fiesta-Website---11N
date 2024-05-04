@@ -1,0 +1,395 @@
+/* General Styling For All Elements */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+/* Styling For Body */
+
+body {
+    font-family: 'Ysabeau', sans-serif;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #212529;
+}
+
+.navbar {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
+
+.search input {
+    font-family: 'Ysabeau', sans-serif;
+    border: 1px solid #212529;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media only screen and (max-width:700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin: 20px auto;
+        flex-direction: column;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 550px) {
+    footer {
+        justify-content: center;
+    }
+
+    footer div {
+        text-align: center;
+    }
+
+
+}
+
+footer div {
+    margin: auto 50px;
+}
+
+.icons svg {
+    color: #6b7280;
+    margin: auto 5px;
+}
+
+
+/* Home - Main Image */
+
+#homeImg {
+    width: 100%;
+}
+
+/* Basic Container */
+
+.container {
+    margin: 100px auto;
+    padding: 50px;
+}
+
+/* Hero - Container 1 */
+
+#container1 {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+    #container1 {
+        flex-wrap: wrap;
+    }
+
+    #container1 .image img {
+        width: 100%;
+    }
+
+}
+
+
+#container1 .text,
+#container1 .image {
+    padding: 20px;
+}
+
+
+
+#container1 .text h4 {
+    color: #6366f1;
+}
+
+#container1 .text .hr {
+    width: 5%;
+    border: 2px solid #6366f1;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+/* Horizontal Rule */
+
+.hr {
+    border: 1px solid #f3f4f6;
+    border-radius: 5px;
+    width: 75%;
+    margin: auto;
+}
+
+/* Jumbotron - Section */
+
+.section {
+    width: 100%;
+    margin: 100px auto;
+    padding: 100px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.section h1,
+.section p {
+    margin: 20px auto;
+}
+
+.section .buttons {
+    margin: 40px auto;
+}
+
+.section .buttons .btn {
+    background-color: #6366f1;
+    font-family: 'Ysabeau', sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.section .buttons .btn:hover {
+    background-color: #4d4ff3;
+}
+
+#blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+    #container1 {
+        flex-wrap: wrap;
+    }
+
+    #container1 .image img {
+        width: 100%;
+    }
+
+}
+
+#blog .image, #blog .text{
+    padding: 25px;
+}
+
+#blog .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#blog .text div{
+    margin: 25px 0px;
+}
+
+#blog .text div p{
+    margin: 5px 0px;
+}
+
+#blog .text div a{
+    color: #6366f1;
+    text-decoration: none;
+}
+
+#blog .text div a:hover{
+    color: #4d4ff3;
+}
+
+
+
+#gallery {
+    width: 100%;
+}
+
+#gallery .text {
+    text-align: center;
+}
+
+#gallery .text h4 {
+    color: #6366f1;
+}
+
+#gallery .text .hr {
+    width: 5%;
+    border: 2px solid #6366f1;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+#gallery .homeGallery {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#gallery .homeGallery .cards {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#gallery .homeGallery .cards .card {
+    margin: 25px 0px;
+    border: 1px solid #f3f4f6;
+    border-radius: 5px;
+}
+
+#gallery .homeGallery .cards .card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#gallery .homeGallery .cards .card .caption {
+    padding: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+    #gallery .homeGallery {
+        flex-direction: column;
+    }
+
+    #gallery .homeGallery .cards {
+        width: 100%;
+    }
+}
+
+#gallery .button {
+    text-align: center;
+}
+
+#gallery .button .btn {
+    background-color: #6366f1;
+    font-family: 'Ysabeau', sans-serif;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#gallery .button .btn:hover {
+    background-color: #4d4ff3;
+}
+
+
+#contact{
+    width: 75%;
+}
+
+#contact .text{
+    text-align: center;
+}
+
+#contact .text .hr {
+    width: 5%;
+    border: 2px solid #6366f1;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+#contact .form{
+
+    width: 100%;
+    margin: 50px auto;
+
+}
+
+#contact .form input{
+    font-family: 'Ysabeau', sans-serif;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact .form textarea {
+
+    font-family: 'Ysabeau', sans-serif;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact .form .buttons{
+    text-align: center;
+}
+
+#contact .form .btn{
+    background-color: #6366f1;
+    font-family: 'Ysabeau', sans-serif;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#contact .form .btn:hover{
+    background-color: #4d4ff3;
+}
